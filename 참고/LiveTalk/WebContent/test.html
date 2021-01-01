@@ -1,0 +1,90 @@
+<html><head>
+<title>Live Talk</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="./css/mycss.css">
+<script type="text/javascript" src="./js/myjs.js"></script>
+</head>
+<body>
+	<div id="title">
+		<h1>
+			<a href=".">LiveTalk</a>
+		</h1>
+	</div>
+	<div id="content">
+
+		<div id="nav">
+			<div id="plustopic">
+				<a href="javascript:newtopic()" id="toggle"> 항목 추가 +</a>
+				<div id="addtopic">
+					<form action="./jsp/topic.jsp" method="post">
+						<input type="text" name="TopicName"> <input class="submit" type="submit" value="add">
+					</form>
+				</div>
+			</div>
+			<div id="topmenu">
+				<ul>
+					<li><a class="topicStyle" href="?id=TB_1">컴공</a></li>
+<li><a class="topicStyle" href="?id=TB_2">도영진</a></li>
+<li><a class="topicStyle" href="?id=TB_3">Nell</a></li>
+<li><a class="topicStyle" href="?id=TB_4">선욱이형</a></li>
+
+				</ul>
+			</div>
+		</div>
+
+
+		<div id="article">
+			<div id="introduce" style="display: none;">
+				<h1>Hello Welcome to Live Talk</h1>
+				<p>What is your today's Topic?</p>
+			</div>
+			<div id="writearea">
+				<script>
+					var para = getParam("id");
+					var write = document.getElementById("writearea");
+					var intro = document.getElementById("introduce");
+					if (para == "")
+						write.style.display = "none";
+					else
+						intro.style.display = "none";
+				</script>
+				<form class="write" action="./jsp/input.jsp" method="post" enctype="multipart/form-data">
+					<ul>
+						<li><input type="text" name="identity" value="ID" onfocus="clearText(this)"> <input type="password" name="password" value="Password" onfocus="clearText(this)">
+						</li>
+						<li><textarea class="field-style" name="content" cols="10" rows="5" maxlength="150"></textarea> <script>
+								document.writeln("<input type='hidden' 	name='topic' value='"+para+"'>");
+							</script><input type="hidden" name="topic" value="TB_3">
+</li>
+						<li><input type="file" name="uploadFile" accept=".gif, .jpg, .png"> <input type="submit" value="Send"></li>
+					</ul>
+				</form>
+			</div>
+			<div id="talkarea">
+				<div class="talk">
+<h3 class="title">2 넬</h3> <p class="time"> 2016-12-06 10:47:40.0</p>
+<a class="deltalk" href='javascript:deltalk( 2 , "TB_3")'>x</a>
+<form style="display:none" id="talk2" action="./jsp/deltalk.jsp"></form>
+<p class="content">넬개좋음;</p>
+</div>
+<div class="talk">
+<h3 class="title">1 그리워하려고 해</h3> <p class="time"> 2016-12-06 10:45:28.0</p>
+<a class="deltalk" href='javascript:deltalk( 1 , "TB_3")'>x</a>
+<form style="display:none" id="talk1" action="./jsp/deltalk.jsp"></form>
+<p class="content">그리워하려고해~</p>
+<a class="aimg" href="./img/folder(1).jpg"> 이미지 보기 </a> <img src="./img/folder(1).jpg" class="img"> 
+</div>
+
+			</div>
+		</div>
+
+
+	</div>
+	<!--<div id="foot">
+		<p>⊙ Copyright(c)2016 by 김현수. All Page content is property of 김현수
+		</p>
+	</div>-->
+
+
+</body></html>

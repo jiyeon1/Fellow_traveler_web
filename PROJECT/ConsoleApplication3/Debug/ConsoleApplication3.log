@@ -1,0 +1,9 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(387,5): warning MSB8028: 중간 디렉터리(Debug\)에 다른 프로젝트(ConsoleApplication3.vcxproj)에서 공유하는 파일이 포함되어 있습니다.  이로 인해 잘못된 정리 및 다시 빌드 동작이 수행될 수 있습니다.
+  route_search.c
+c:\users\user\desktop\@\1.학교\2학년\2-2\웹프\팀플\project\consoleapplication3\route_search.c(68): warning C4013: 'strcmp'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+c:\users\user\desktop\@\1.학교\2학년\2-2\웹프\팀플\project\consoleapplication3\route_search.c(66): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1272): note: 'scanf' 선언을 참조하십시오.
+c:\users\user\desktop\@\1.학교\2학년\2-2\웹프\팀플\project\consoleapplication3\route_search.c(101): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1272): note: 'scanf' 선언을 참조하십시오.
+  ConsoleApplication3.vcxproj -> C:\Users\USER\Desktop\@\1.학교\2학년\2-2\웹프\팀플\PROJECT\Debug\PROJECT.exe
+  ConsoleApplication3.vcxproj -> C:\Users\USER\Desktop\@\1.학교\2학년\2-2\웹프\팀플\PROJECT\Debug\PROJECT.pdb (Partial PDB)
